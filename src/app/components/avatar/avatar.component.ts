@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./avatar.component.css']
 })
 export class AvatarComponent implements OnInit {
+  // buat nangkep url gambarnya
+  @Input() src!: string;
 
   constructor() { }
 

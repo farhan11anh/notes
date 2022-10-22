@@ -1,0 +1,17 @@
+:host {
+  width: fit-content;
+  height: fit-content;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
