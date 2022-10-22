@@ -36,6 +36,22 @@ import { BodyViewContentComponent } from './content/view-content/body-view-conte
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    NavComponent,
+    AvatarComponent,
+    HeadTitleComponent,
+    SidebarComponent,
+    ListComponent,
+    NewListComponent,
+    ContentComponent,
+    ListContentComponent,
+    SearchBarComponent,
+    ListChildComponent,
+    AddListComponent,
+    ViewContentComponent,
+    HeadViewContentComponent,
+    BodyViewContentComponent
   ]
 })
 export class MainModule { }
