@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+  @Input() open: boolean;
 
-  constructor() { }
+  constructor(
+    private element: ElementRef
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges() {
+    const elem = this.element.nativeElement;
+    elem.classList[this.open ? 'add' : 'remove']('open');
   }
 
 }
