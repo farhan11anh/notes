@@ -1,8 +1,8 @@
-<app-topbar></app-topbar>
+<app-topbar (_toggleSidebar)="toggleSidebar()"></app-topbar>
 
 <!-- sorry lupa, harusnya dibungkus pake flex container wkwkwk -->
 <div class="container">
-  <app-sidebar></app-sidebar>
+  <app-sidebar [open]="isSidebarOpen"></app-sidebar>
   <app-main></app-main>
   <app-editor></app-editor>
 </div>
