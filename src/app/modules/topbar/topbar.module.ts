@@ -4,11 +4,13 @@ import { TopbarComponent } from './topbar.component';
 
 // import external component
 import { AvatarComponent } from 'src/app/components/avatar/avatar.component';
+import { ButtonComponent } from 'src/app/components/button/button.component';
 
 @NgModule({
   declarations: [
     TopbarComponent,
-    AvatarComponent
+    AvatarComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule
