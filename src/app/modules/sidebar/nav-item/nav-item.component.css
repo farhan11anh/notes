@@ -1,0 +1,23 @@
+:host {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+.nav-item-title {
+  margin: 0 auto 0 10px;
+}
+
+.nav-item-bullet {
+  position: absolute;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* background-color: currentColor; */
+}
